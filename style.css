@@ -1,0 +1,173 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- Find this block in style.css --- */
+body {
+    font-family: 'Inter', sans-serif; /* Fallback/body font */
+
+    /* --- NEW Dotted Background --- */
+    background-color: #f8f9fa; /* A very light grey base */
+    background-image: radial-gradient(circle, #d1d1d1 1px, rgba(255,255,255,0) 1px); /* Light grey dots */
+    background-size: 15px 15px; /* Adjust spacing: smaller numbers = denser dots */
+    /* --- End of Dotted Background --- */
+
+    background-attachment: fixed; /* Optional: Keeps pattern fixed during scroll */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    line-height: 1.6;
+}
+/* --- End of block --- */
+
+.container {
+    max-width: 700px; /* Slightly wider */
+    padding: 30px 20px;
+}
+
+/* Styles for the main landing page */
+header h1 {
+    font-family: 'Lora', serif; /* Distinctive font for name */
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+    color: #111; /* Darker name */
+}
+
+header .tagline {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2.5rem;
+}
+
+nav {
+    margin-bottom: 2.5rem;
+}
+
+nav a {
+    font-family: 'Inter', sans-serif; /* Clear sans-serif for nav */
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #444;
+    background-color: #f0f0f0;
+    padding: 9px 18px; /* Slightly larger buttons */
+    border-radius: 6px;
+    margin: 0 8px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    display: inline-block; /* Ensure proper spacing/sizing */
+    margin-bottom: 10px; /* Add space for wrapping on small screens */
+}
+
+nav a:hover {
+    background-color: #e5e5e5;
+    color: #000;
+}
+
+footer {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 2rem; /* More space before footer */
+}
+
+footer a {
+    color: #555;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    padding: 0 5px; /* Add slight padding */
+}
+
+footer a:hover {
+    color: #000;
+}
+
+/* Styles for the other content pages */
+.content-page {
+    text-align: left; /* Align content left on detail pages */
+    padding-top: 40px; /* Space from top */
+    padding-bottom: 40px;
+}
+
+.content-page h2 {
+    font-family: 'Lora', serif;
+    font-size: 1.8rem;
+    color: #222;
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    border-bottom: 1px solid #eee; /* Subtle separator */
+    padding-bottom: 0.3rem;
+}
+
+.content-page h3 {
+    font-family: 'Lora', serif;
+    font-size: 1.3rem;
+    color: #333;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.content-page p, .content-page ul {
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+.content-page ul {
+    list-style-position: outside;
+    padding-left: 20px; /* Indent list */
+}
+
+.content-page li {
+    margin-bottom: 0.5rem;
+}
+
+.content-page strong { /* For things like Dates/Company */
+    font-weight: 600;
+    color: #333;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 2.5rem;
+    font-size: 0.9rem;
+    color: #555;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.back-link:hover {
+    background-color: #f5f5f5;
+    border-color: #ccc;
+    color: #222;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+    header .tagline {
+        font-size: 1rem;
+    }
+    nav a {
+        padding: 8px 15px;
+        margin: 0 5px 8px 5px; /* Adjust margins for wrapping */
+    }
+    .container {
+        padding: 20px 15px;
+    }
+    .content-page h2 {
+       font-size: 1.6rem;
+    }
+    .content-page h3 {
+       font-size: 1.2rem;
+    }
+}
