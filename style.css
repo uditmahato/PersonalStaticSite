@@ -11,7 +11,7 @@ body {
 
     /* --- NEW Dotted Background --- */
     background-color: #f8f9fa; /* A very light grey base */
-    background-image: radial-gradient(circle, #d1d1d1 1px, rgba(255,255,255,0) 1px); /* Light grey dots */
+    background-image: radial-gradient(circle, #ffffff 1px, rgba(255, 255, 255, 0) 0.5px); /* Light grey dots */
     background-size: 15px 15px; /* Adjust spacing: smaller numbers = denser dots */
     /* --- End of Dotted Background --- */
 
